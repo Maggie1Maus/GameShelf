@@ -10,9 +10,12 @@
     <title>Gameshelf</title>
 </head>
 <body>
+    <ul id="alphabetFilter"></ul>
+    <button onclick="alleSpieleAnzeigen()">Alle Spiele anzeigen</button>
+
     <div class="wrapper">
-        <div class="games">
-            <div class="singleGame">
+        <div id="spieleContainer" class="games">
+            <div class="singleGame" data-name="The Last of Us, Last of Us">
                 <img src="bilder\LastOfUs.png">
                 <div class="genre">
                     <p>Apokalypse</p>
@@ -21,7 +24,7 @@
                 <h2>The Last of Us</h2>
                 <p>"The Last of Us" ist ein von Kritikern hochgelobtes Videospiel, das eine düstere, postapokalyptische Welt präsentiert, in der eine tödliche Infektion die Menschheit dezimiert hat. Die Geschichte folgt dem Hauptcharakter Joel und der jungen Ellie auf ihrer gefährlichen Reise durch dieses feindselige Terrain, wobei sie sich nicht nur gegen infizierte Wesen, sondern auch gegen andere Überlebende behaupten müssen. Die emotionale Tiefe der Charaktere und die mitreißende Handlung machen das Spiel zu einem unvergesslichen Erlebnis.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="No man´s Sky">
                 <img src="bilder\NoMansSky.png">
                 <div class="genre">
                     <p>Si-Fi</p>
@@ -30,7 +33,7 @@
                 <h2>No man´s Sky</h2>
                 <p>"No Man's Sky" ist ein Open-World-Spiel, das Spieler auf eine intergalaktische Reise durch ein prozedural generiertes Universum schickt. Sie erkunden Planeten, sammeln Ressourcen, handeln, kämpfen und entdecken eine Vielzahl von Lebewesen und Welten. Das Spiel ist bekannt für seine enorme Spielwelt und die Möglichkeit, nahezu grenzenlose Abenteuer zu erleben.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Detroit">
                 <img src="bilder\Detroit.png">
                 <div class="genre">
                     <p>Zukunft</p>
@@ -39,7 +42,7 @@
                 <h2>Detroit - Become Human</h2>
                 <p>In "Detroit: Become Human" erleben Spieler eine dystopische Zukunft, in der humanoide Roboter mit künstlicher Intelligenz existieren. Das Spiel folgt drei verschiedenen Androiden und ihren individuellen Geschichten, während sie sich mit den ethischen Fragen rund um künstliches Bewusstsein, Freiheit und Moral auseinandersetzen.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Halo">
                 <img src="bilder\Halo.png">
                 <div class="genre">
                     <p>Si-Fi</p>
@@ -48,7 +51,7 @@
                 <h2>Halo</h2>
                 <p>"Halo" ist eine bekannte Videospielserie, die von Bungie entwickelt wurde und später von 343 Industries übernommen wurde. Sie handelt von einem intergalaktischen Krieg zwischen der Menschheit und einer Allianz aus außerirdischen Rassen, insbesondere den Covenant. Der Spieler übernimmt die Rolle des Master Chief, einem supersoldatenähnlichen Krieger, der die Menschheit gegen die Bedrohung verteidigt. Die Serie umfasst eine Vielzahl von Spielen, Büchern und anderen Medien und ist für ihre intensive Action, fesselnde Handlung und innovative Mehrspielermodi bekannt.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Zelda, Breath of the Wild">
                 <img src="bilder\ZeldaBOTW.png">
                 <div class="genre">
                     <p>Fantasy</p>
@@ -58,7 +61,7 @@
                 <h2>Zelda - Breath of the Wild</h2>
                 <p>"The Legend of Zelda: Breath of the Wild" ist ein Open-World-Action-Adventure-Spiel von Nintendo für die Nintendo Switch und die Wii U. Der Spieler schlüpft in die Rolle von Link, der die Welt von Hyrule erkundet, um Prinzessin Zelda zu retten und das Böse zu besiegen. Das Spiel zeichnet sich durch eine offene Spielwelt, innovative Gameplay-Mechaniken, wie Klettern und Kochen, sowie eine beeindruckende Grafik aus. Es bietet den Spielern die Freiheit, die Welt auf ihre eigene Weise zu erkunden und zahlreiche Rätsel und Herausforderungen zu meistern.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Tomb Raider">
                 <img src="bilder\TombRaider.png">
                 <div class="genre">
                     <p>Action-Adventures</p>
@@ -66,7 +69,7 @@
                 <h2>Tomb Raider (2013)</h2>
                 <p>"In Tomb Raider (2013)" erlebt der Spieler die Ursprungsgeschichte von Lara Croft, als sie auf einer mysteriösen Insel strandet und ums Überleben kämpft. Das Spiel kombiniert Action, Erkundung und Rätsel, während Lara sich ihren Weg durch gefährliche Umgebungen bahnt, Feinde bekämpft und ihre Fähigkeiten verbessert. Mit beeindruckender Grafik und einer packenden Handlung bietet das Spiel eine intensive Spielerfahrung, die die Wurzeln der legendären Lara Croft auf spannende Weise neu erzählt.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Tomb Raider, Rise">
                 <img src="bilder\RiseOfTheTR.png">
                 <div class="genre">
                     <p>Action-Adventures</p>
@@ -74,7 +77,7 @@
                 <h2>Rise of the Tomb Raider</h2>
                 <p>"In Rise of the Tomb Raider" begibt sich Lara Croft auf die Suche nach der verlorenen Stadt Kitezh, um die Geheimnisse ihrer Familie zu enthüllen und eine mystische Kraft zu finden. Das Spiel kombiniert Action, Erkundung und Rätsel in atemberaubenden Umgebungen, während Lara gegen feindliche Organisationen und Naturgewalten kämpft. Mit verbesserten Gameplay-Mechaniken, einer packenden Handlung und beeindruckender Grafik setzt das Spiel die Abenteuer von Lara Croft mit noch größerer Intensität und epischeren Momenten fort.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Tomb Raider, Shadow">
                 <img src="bilder\ShadowOfTheTombRaider.png">
                 <div class="genre">
                     <p>Action-Adventures</p>
@@ -83,7 +86,7 @@
                 <p>
                     "Shadow of the Tomb Raider" ist ein Action-Adventure-Videospiel, das von Crystal Dynamics entwickelt und von Square Enix veröffentlicht wurde. Es ist der dritte Teil der Neuinterpretation der Tomb-Raider-Serie und folgt der Abenteuerin Lara Croft auf ihrer Suche nach Artefakten und dem Kampf gegen die Geheimorganisation Trinity. Das Spiel konzentriert sich auf Erkundung, Kämpfe und Rätsel in einer offenen Spielwelt, die in Südamerika angesiedelt ist.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Forest, The">
                 <img src="bilder\TheForest.png">
                 <div class="genre">
                     <p>Survival</p>
@@ -92,7 +95,7 @@
                 <h2>The Forest</h2>
                 <p>"In Rise of the Tomb Raider" begibt sich Lara Croft auf die Suche nach der verlorenen Stadt Kitezh, um die Geheimnisse ihrer Familie zu enthüllen und eine mystische Kraft zu finden. Das Spiel kombiniert Action, Erkundung und Rätsel in atemberaubenden Umgebungen, während Lara gegen feindliche Organisationen und Naturgewalten kämpft. Mit verbesserten Gameplay-Mechaniken, einer packenden Handlung und beeindruckender Grafik setzt das Spiel die Abenteuer von Lara Croft mit noch größerer Intensität und epischeren Momenten fort.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Hogwards, Legacy">
                 <img src="bilder\Hogwards.png">
                 <div class="genre">
                     <p>Open World</p>
@@ -101,7 +104,7 @@
                 <h2>Hogwards Legacy</h2>
                 <p>"In Rise of the Tomb Raider" begibt sich Lara Croft auf die Suche nach der verlorenen Stadt Kitezh, um die Geheimnisse ihrer Familie zu enthüllen und eine mystische Kraft zu finden. Das Spiel kombiniert Action, Erkundung und Rätsel in atemberaubenden Umgebungen, während Lara gegen feindliche Organisationen und Naturgewalten kämpft. Mit verbesserten Gameplay-Mechaniken, einer packenden Handlung und beeindruckender Grafik setzt das Spiel die Abenteuer von Lara Croft mit noch größerer Intensität und epischeren Momenten fort.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Animal Crossing">
                 <img src="bilder\AnimalCrossing.png">
                 <div class="genre">
                     <p>Open World</p>
@@ -110,7 +113,7 @@
                 <h2>Animal Crossing</h2>
                 <p>"In Rise of the Tomb Raider" begibt sich Lara Croft auf die Suche nach der verlorenen Stadt Kitezh, um die Geheimnisse ihrer Familie zu enthüllen und eine mystische Kraft zu finden. Das Spiel kombiniert Action, Erkundung und Rätsel in atemberaubenden Umgebungen, während Lara gegen feindliche Organisationen und Naturgewalten kämpft. Mit verbesserten Gameplay-Mechaniken, einer packenden Handlung und beeindruckender Grafik setzt das Spiel die Abenteuer von Lara Croft mit noch größerer Intensität und epischeren Momenten fort.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Life is Strange">
                 <img src="bilder\LIS.png">
                 <div class="genre">
                     <p>Entscheidungen treffen</p>
@@ -118,7 +121,7 @@
                 <h2>Life is Strange (2015)</h2>
                 <p>"In Rise of the Tomb Raider" begibt sich Lara Croft auf die Suche nach der verlorenen Stadt Kitezh, um die Geheimnisse ihrer Familie zu enthüllen und eine mystische Kraft zu finden. Das Spiel kombiniert Action, Erkundung und Rätsel in atemberaubenden Umgebungen, während Lara gegen feindliche Organisationen und Naturgewalten kämpft. Mit verbesserten Gameplay-Mechaniken, einer packenden Handlung und beeindruckender Grafik setzt das Spiel die Abenteuer von Lara Croft mit noch größerer Intensität und epischeren Momenten fort.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Life is Strange">
                 <img src="bilder\LIS-BeforeTheStorm.png">
                 <div class="genre">
                     <p>Entscheidungen treffen</p>
@@ -126,7 +129,7 @@
                 <h2>Life is Strange: Before the Storm</h2>
                 <p>"In Rise of the Tomb Raider" begibt sich Lara Croft auf die Suche nach der verlorenen Stadt Kitezh, um die Geheimnisse ihrer Familie zu enthüllen und eine mystische Kraft zu finden. Das Spiel kombiniert Action, Erkundung und Rätsel in atemberaubenden Umgebungen, während Lara gegen feindliche Organisationen und Naturgewalten kämpft. Mit verbesserten Gameplay-Mechaniken, einer packenden Handlung und beeindruckender Grafik setzt das Spiel die Abenteuer von Lara Croft mit noch größerer Intensität und epischeren Momenten fort.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Heavy">
                 <img src="bilder\HeavyRain.png">
                 <div class="genre">
                     <p>Entscheidungen treffen</p>
@@ -134,7 +137,7 @@
                 <h2>Heavy Rain</h2>
                 <p>"In Rise of the Tomb Raider" begibt sich Lara Croft auf die Suche nach der verlorenen Stadt Kitezh, um die Geheimnisse ihrer Familie zu enthüllen und eine mystische Kraft zu finden. Das Spiel kombiniert Action, Erkundung und Rätsel in atemberaubenden Umgebungen, während Lara gegen feindliche Organisationen und Naturgewalten kämpft. Mit verbesserten Gameplay-Mechaniken, einer packenden Handlung und beeindruckender Grafik setzt das Spiel die Abenteuer von Lara Croft mit noch größerer Intensität und epischeren Momenten fort.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Beyond">
                 <img src="bilder\BeyondTwoSouls.png">
                 <div class="genre">
                     <p>Entscheidungen treffen</p>
@@ -142,7 +145,7 @@
                 <h2>Beyond - Two Souls</h2>
                 <p>"In Rise of the Tomb Raider" begibt sich Lara Croft auf die Suche nach der verlorenen Stadt Kitezh, um die Geheimnisse ihrer Familie zu enthüllen und eine mystische Kraft zu finden. Das Spiel kombiniert Action, Erkundung und Rätsel in atemberaubenden Umgebungen, während Lara gegen feindliche Organisationen und Naturgewalten kämpft. Mit verbesserten Gameplay-Mechaniken, einer packenden Handlung und beeindruckender Grafik setzt das Spiel die Abenteuer von Lara Croft mit noch größerer Intensität und epischeren Momenten fort.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Dreamlight">
                 <img src="bilder\Disney.png">
                 <div class="genre">
                     <p>Cozy</p>
@@ -150,7 +153,7 @@
                 <h2>Dreamlight Valley</h2>
                 <p>"In Rise of the Tomb Raider" begibt sich Lara Croft auf die Suche nach der verlorenen Stadt Kitezh, um die Geheimnisse ihrer Familie zu enthüllen und eine mystische Kraft zu finden. Das Spiel kombiniert Action, Erkundung und Rätsel in atemberaubenden Umgebungen, während Lara gegen feindliche Organisationen und Naturgewalten kämpft. Mit verbesserten Gameplay-Mechaniken, einer packenden Handlung und beeindruckender Grafik setzt das Spiel die Abenteuer von Lara Croft mit noch größerer Intensität und epischeren Momenten fort.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Fallout">
                 <img src="bilder\Fallout.png">
                 <div class="genre">
                     <p>Apocalypse</p>
@@ -160,7 +163,7 @@
                 <h2>Fallout 4</h2>
                 <p>Fallout 4 ist ein postapokalyptisches Action-Rollenspiel, das in einer offenen Welt spielt. Der Spieler übernimmt die Rolle eines Überlebenden, der in einer atomaren Wüste nach seinem entführten Sohn sucht. Dabei erkundet er eine verfallene Welt, trifft auf verschiedene Fraktionen und kämpft gegen Mutanten und andere Gefahren. Der Spieler kann die Geschichte beeinflussen und die Welt nach Belieben erkunden und gestalten.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Sims">
                 <img src="bilder\Sims.png">
                 <div class="genre">
                     <p>Life Simulator</p>
@@ -168,7 +171,7 @@
                 <h2>Sims 1-4</h2>
                 <p>"Sims" ist eine bekannte Videospielreihe, die von Electronic Arts entwickelt wurde. In diesem Spiel können Spieler virtuelle Figuren, sogenannte Sims, erstellen und steuern. Die Sims leben in einer simulierten Welt, in der sie arbeiten, soziale Beziehungen pflegen, Häuser bauen und ihren Alltag gestalten können. Das Spiel bietet eine Vielzahl von Möglichkeiten zur Individualisierung und Interaktion, was zu einer Vielzahl von Spielerlebnissen führt.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Subnautica">
                 <img src="bilder\Subnautica.png">
                 <div class="genre">
                     <p>Survival</p>
@@ -177,7 +180,7 @@
                 <h2>Subnautica</h2>
                 <p>"Subnautica" ist ein Open-World-Überlebensspiel, das von Unknown Worlds Entertainment entwickelt wurde. Der Spieler überlebt auf einem außerirdischen Ozeanplaneten, erkundet die Unterwasserwelt und sammelt Ressourcen, um zu überleben. Dabei trifft er auf verschiedene Kreaturen, erforscht Ruinen und löst das Geheimnis hinter dem Absturz seines Raumschiffs. Das Spiel bietet eine fesselnde Unterwasserumgebung und eine spannende Handlung, die den Spieler in ihren Bann zieht.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Lego, Jurassic World">
                 <img src="bilder\LegoJurassicWorld.png">
                 <div class="genre">
                     <p>Action-Adventure</p>
@@ -185,7 +188,7 @@
                 <h2>Lego - Jurassic World</h2>
                 <p>"Lego Jurassic World" ist ein Action-Adventure-Videospiel, das auf der gleichnamigen Filmreihe und den Lego-Spielzeugen basiert. Spieler können die Ereignisse aller vier "Jurassic Park" Filme nachspielen und dabei als Lego-Versionen der Charaktere agieren. Das Spiel bietet eine Mischung aus Erkundung, Rätseln und Action, wobei Spieler verschiedene Dinosaurier kontrollieren und mit ihren einzigartigen Fähigkeiten interagieren können. Die Lego-typische humorvolle Darstellung der Handlung und die Möglichkeit, die Spielwelt frei zu erkunden, machen "Lego Jurassic World" zu einem unterhaltsamen Spielerlebnis für Fans jeden Alters.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Need, Most">
                 <img src="bilder\NeedForSpeed.png">
                 <div class="genre">
                     <p>Open World</p>
@@ -194,7 +197,7 @@
                 <h2>Need For Speed - Most Wanted</h2>
                 <p>"Need for Speed: Most Wanted" ist ein Rennvideospiel, das von Criterion Games entwickelt wurde. Spieler treten in illegalen Straßenrennen an, während sie vor der Polizei fliehen und ihre Fahrzeuge aufrüsten, um zum meistgesuchten Fahrer zu werden. Das Spiel bietet eine offene Spielwelt, in der Spieler frei herumfahren und Rennen bestreiten können. Es kombiniert schnelle Action mit einer packenden Handlung und bietet eine Vielzahl von Fahrzeugen und Anpassungsoptionen, die den Spielern ein intensives Rennerlebnis bieten.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Until">
                 <img src="bilder\UntilDawn.png">
                 <div class="genre">
                     <p>Horror</p>
@@ -202,7 +205,7 @@
                 <h2>Until Dawn</h2>
                 <p>"Until Dawn" ist ein interaktives Drama-Survival-Horror-Spiel, das von Supermassive Games entwickelt und von Sony Computer Entertainment veröffentlicht wurde. Der Spieler kontrolliert eine Gruppe von acht jungen Erwachsenen, die in einer einsamen Berghütte festsitzen und von einem unheimlichen Killer bedroht werden. Das Spiel zeichnet sich durch seine Entscheidungsbäume aus, die den Verlauf der Handlung und das Schicksal der Charaktere beeinflussen können. Es kombiniert Elemente von Horror, Spannung und Drama zu einem einzigartigen Spielerlebnis.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="GTA">
                 <img src="bilder\GTA.png">
                 <div class="genre">
                     <p>Open World</p>
@@ -211,7 +214,7 @@
                 <h2>GTA 5</h2>
                 <p>"GTA 5" ist ein Open-World-Action-Adventure-Spiel, das von Rockstar North entwickelt und von Rockstar Games veröffentlicht wurde. Es ist der fünfte Hauptteil der Grand-Theft-Auto-Serie. Das Spiel spielt in der fiktiven Stadt Los Santos und der umliegenden Region in Southern California. Spieler können verschiedene Missionen absolvieren, die Handlung vorantreiben oder sich frei in der offenen Spielwelt bewegen. Das Spiel bietet eine Vielzahl von Aktivitäten, darunter Fahrzeugkämpfe, Schießereien, Rennen, Banküberfälle und mehr. Es ist bekannt für seine satirische Darstellung der modernen amerikanischen Gesellschaft und seine beeindruckende Grafik und Spielmechanik.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="God">
                 <img src="bilder\GOW.png">
                 <div class="genre">
                     <p>Action-Adventure</p>
@@ -219,7 +222,7 @@
                 <h2>God of War</h2>
                 <p>"God of War" ist ein Action-Adventure-Videospiel, das von Santa Monica Studio entwickelt und von Sony Interactive Entertainment veröffentlicht wurde. Das Spiel basiert lose auf der griechischen Mythologie und folgt dem Kriegsgott Kratos, der zusammen mit seinem Sohn Atreus die nordische Welt bereist, um den Tod seiner Frau zu rächen und seinen Sohn zu einem Mann zu machen. Es kombiniert nahtlos Action, Erkundung und eine tiefgreifende Handlung. Das Spiel ist bekannt für seine atemberaubende Grafik, fesselnde Geschichte und innovative Gameplay-Mechanik, einschließlich des Einsatzes einer magischen Axt und epischer Bosskämpfe.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Call">
                 <img src="bilder\CallOfDuty.png">
                 <div class="genre">
                     <p>Krieg</p>
@@ -228,7 +231,7 @@
                 <h2>Call of Duty</h2>
                 <p>"Call of Duty" ist eine der bekanntesten und erfolgreichsten Videospielreihen im Ego-Shooter-Genre. Das Franchise wurde von verschiedenen Entwicklern erstellt, darunter Infinity Ward, Treyarch und Sledgehammer Games, und von Activision veröffentlicht. Die Spiele der Serie decken verschiedene historische und fiktive Kriege ab, darunter der Zweite Weltkrieg, moderne Konflikte und futuristische Szenarien. "Call of Duty" bietet intensive Mehrspielermodi sowie packende Einzelspielerkampagnen, die oft von militärischen Konflikten und Spezialeinheiten inspiriert sind. Das Spiel ist bekannt für seine rasante Action, realistische Waffenmechanik und beeindruckende Grafik.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Assassins">
                 <img src="bilder\AC.png">
                 <div class="genre">
                     <p>Action-Adventure</p>
@@ -237,7 +240,7 @@
                 <h2>Assassins Creed</h2>
                 <p>Du bist ein Assassine, der seine Beute mit einer versteckten Klinge jagt. Ein Krieger, der im Geheimen agiert und für seine Skrupellosigkeit bekannt ist. Deine Aktionen können deine unmittelbare Umgebung ins Chaos werfen und werden die Ereignisse während dieses wichtigen Moments der Menschheitsgeschichte formen.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Little Big Planet, Planet">
                 <img src="bilder\LittleBigPlanet.png">
                 <div class="genre">
                     <p>Jump-'n'-Run</p>
@@ -246,7 +249,7 @@
                 <h2>Little Big Planet</h2>
                 <p>In Little Big Planet, kurz LBP, steuert der Spieler einen kleinen Character, genannt "Sackboy" oder "Sackgirl", (Wegen des Materials aus dem diese Figuren gemacht sind, nämlich Sachleinen.) welcher Rennen, Springen und Sachen greifen kann. Der Spieler kann deren Beweglichkeit nutzen um die Welt von Littel Big Planet zu erkunden, Materialien im Spiel selbst zu sammeln und daraus neue Welten zu erschaffen. Dadurch sind Fantasie kaum Grenzen gesetzt und gestatten dem Spieler auch seinem Character immer wieder neue Fertigkeiten und Werkzeuge aneignen zu lassen, die im eigens angefertigten Spielinternen Tutorials erlernt werden können.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Unpacking">
                 <img src="bilder\Unpacking.png">
                 <div class="genre">
                     <p>Cozy</p>
@@ -255,7 +258,7 @@
                 <h2>Unpacking</h2>
                 <p>Unpacking ist ein entspannendes Spiel über das vertraute Erlebnis, seinen Sachen einen Platz in einem neuen Zuhause zu finden. Eine Mischung aus Bausteinpuzzle und Heimdekoration lädt dich dazu ein, es dir gemütlich zu machen und dabei etwas über das Leben zu erfahren, das du hier auspackst.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Mario, Party">
                 <img src="bilder\MarioParty.png">
                 <div class="genre">
                     <p>Mini Games</p>
@@ -263,7 +266,7 @@
                 <h2>Mario Party</h2>
                 <p>Super Mario Party kehrt zum klassischen Brettspiel-Vergnügen zurück und lockt zugleich mit neuen, strategischen Elementen. So hat beispielsweise jede Spielfigur ihre speziellen Würfel. Dazu kommen viele neue Spielmodi und Spielweisen sowie Minispiele, die erst dank der JoyCon möglich werden. Zwei Nintendo Switch-Konsolen lassen sich zu einzigartigen Multiplayer-Wettkämpfen verbinden. Und erstmals überhaupt können Mario Party-Fans sich gegenseitig online herausfordern. Mit 20 spielbaren Charakteren, 80 komplett neuen Minispielen und zahlreichen Spielmodi ist Super Mario Party ein ausgelassenes Spielvergnügen für Freunde und die ganze Familie.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Spyro">
                 <img src="bilder\Spyro.png">
                 <div class="genre">
                     <p>Jump-'n'-Run</p>
@@ -271,7 +274,7 @@
                 <h2>Spyro</h2>
                 <p>Der Meister der Flammen ist wieder unterwegs! Wie immer ist er Feuer und Flamme, und jetzt brennt er auf neue Abenteuer in atemberaubendem HD. In der Spyro™ Reignited Trilogy-Spielesammlung heizt Spyro seinen Gegnern ein wie nie zuvor. Lass die Spannung in den überarbeiteten Versionen der drei Originalspiele Spyro™ the Dragon, Spyro™ 2: Ripto's Rage! und Spyro™: Year of the Dragon wieder aufflammen! Erkunde die riesigen Reiche, triff die feurigen Persönlichkeiten wieder und erlebe das Abenteuer in aufpolierter Pracht. Denn wenn ein Reich in Gefahr ist, gibt es nur einen rettenden Drachen!</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Rayman">
                 <img src="bilder\Rayman.png">
                 <div class="genre">
                     <p>Jump-'n'-Run</p>
@@ -279,7 +282,7 @@
                 <h2>Rayman</h2>
                 <p>Rayman erscheint für Nintendo Switch mit „Rayman Legends: Definitive Edition“, das exklusive Inhalte mitbringt! Rayman, Globox und die Kleinlinge wandern durch den Zauberwald, als sie ein geheimnisvolles Zelt, gefüllt mit einer Reihe von faszinierenden Gemälden, entdecken. Als sie diese näher betrachten, bemerken sie, dass jedes Bild scheinbar die Geschichte einer geheimnisumwobenen Welt erzählt. Plötzlich werden sie in eines der Gemälde gesaugt und finden sich in einem mittelalterlichen Land wieder. Das Abenteuer kann beginnen! Die Bande muss sich laufend und springend durch fantasievolle Welten kämpfen. Dabei stellt sie sich den außergewöhnlichsten Herausforderungen und lüftet die Geheimnisse der legendären Gemälde.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Thief">
                 <img src="bilder\ThiefSim.png">
                 <div class="genre">
                     <p>Simulator</p>
@@ -287,7 +290,7 @@
                 <h2>Thief Simulator</h2>
                 <p>Werde ein Dieb. Stehle in frei zugänglichen Sandbox-Nachbarschaften. Beobachte dein Ziel und sammle Informationen, die dir beim Einbruch helfen können. Stelle dich der Herausforderung und beklaue die sichersten Häuser. Kaufe Hightech-Diebesausrüstung und lerne neue Diebestricks. Verkaufe Diebesgut an Passanten.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Cooking">
                 <img src="bilder\CookingSim.png">
                 <div class="genre">
                     <p>Simulator</p>
@@ -295,7 +298,7 @@
                 <h2>Cooking Simulator</h2>
                 <p>Werde zum ultimativen Chefkoch! Übernimm die Kontrolle über eine lupenreine, realistische Küche mit allen notwendigen Geräten. Schalte mehr als 80 Rezepte frei, meistere sie und nutze Dutzende von Zutaten, um echte Gerichte zuzubereiten – und das alles mit einer Prise Physik!</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Dort, Romantik">
                 <img src="bilder\DorfRomantik.png">
                 <div class="genre">
                     <p>Cozy</p>
@@ -304,7 +307,7 @@
                 <h2>Dorf Romantik</h2>
                 <p>Dorfromantik ist ein friedliches Aufbauspiel, bei dem du hexagonale Kärtchen platzierst, um eine stetig wachsende Dorflandschaft zu erschaffen. Erkunde eine Vielzahl an farbenfrohen Biomen, schalte neue Bauteile frei und vollende Quests, um deine Spielwelt mit Leben zu füllen!</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Luigi">
                 <img src="bilder\Luigi.png">
                 <div class="genre">
                     <p>Action-Adventure</p>
@@ -312,7 +315,7 @@
                 <h2>Luigis Mansion 3</h2>
                 <p>Begleite den Angsthasen Luigi auf ein glibbrig-gruseliges Abenteuer und hilf ihm, Mario und seine Freunde zu retten</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Pokemon, Purpur, Karmesin">
                 <img src="bilder\Pokemon.png">
                 <div class="genre">
                     <p>Action-Adventure</p>
@@ -321,7 +324,7 @@
                 <h2>Pokemon Purpur & Karmesin</h2>
                 <p>In Pokémon Purpur tauchen Spieler in die neue Region Paldea ein, die von unerforschten Gebieten und einer Vielzahl neuer Pokémon bevölkert ist. Die Spieler können die Welt frei erkunden, auf Abenteuer gehen und dabei auf wilde Pokémon treffen.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Minecraft">
                 <img src="bilder\Minecraft.png">
                 <div class="genre">
                     <p>Open World</p>
@@ -330,7 +333,7 @@
                 <h2>Minecraft</h2>
                 <p>Minecraft ist ein Spiel, das aus Blöcken, Kreaturen und einer Community besteht. Mit Blöcken kannst du die Welt neu formen oder fantastische Kreationen schaffen. Je nach deinem Spielstil kannst du Kreaturen bekämpfen oder dich mit ihnen anfreunden. Erlebe epische Abenteuer alleine oder mit Freunden – es gibt keine falsche Art zu spielen. Es sei denn, du gräbst gerade nach unten.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="It">
                 <img src="bilder\ItTakesTwo.png">
                 <div class="genre">
                     <p>Action-Adventure</p>
@@ -338,7 +341,7 @@
                 <h2>It Takes Two</h2>
                 <p> Die Spieler schlüpfen in die Rollen von Cody und May, einem Paar, das durch einen Zauberspruch in Puppen verwandelt wurde. Sie sind auf einer wundersamen Welt gefangen und müssen dort die Scherben ihrer Beziehung wieder zusammensetzen.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Stardew">
                 <img src="bilder\StardewValley.png">
                 <div class="genre">
                     <p>RPG</p>
@@ -347,7 +350,7 @@
                 <h2>Stardew Valley</h2>
                 <p>Stardew Valley ist ein RPG über das Leben auf dem Land und wurde hauptsächlich von "Harvest Moon" inspiriert. Im Spiel erbt man den alten Hof seines Großvaters im Stardew Valley. Bewaffnet mit seinen abgenutzten Werkzeugen und ein paar Münzen, beginnst du dein neues Leben. Kannst du lernen von den Erträgen deines Bauernhofes zu leben und die mit Unkraut überwucherten Felder zu einem blühenden Zuhause zu machen? Es wird keine einfache Aufgabe sein. Vor Kurzem ist der Joja-Konzern in die Stadt gekommen und die alten Traditionen des Dorfes drohen zu verschwinden. Das Gemeindezentrum, einst der lebendige Treffpunkt des Dorfes, liegt heute in Trümmern. Aber das Tal scheint voller Chancen. Mit ein wenig Fleiß und Hingabe kannst du Stardew Valley zu neuem Glanz verhelfen!</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Watch">
                 <img src="bilder\WatchDogs.png">
                 <div class="genre">
                     <p>Action-Adventure</p>
@@ -356,7 +359,7 @@
                 <h2>Watch Dogs</h2>
                 <p>Watch_Dogs spielt in einer vollständig simulierten, lebendigen Stadt. Mithilfe von Aidens Smartphone hast du als Spieler in Echtzeit Zugriff auf die Infrastruktur der Stadt. Fange deine Gegner in einer Massenkarambolage, indem du die Ampeln manipulierst. Halte Züge an, um mit ihrer Hilfe den Behörden zu entkommen. Entgehe in letzter Sekunde der Verhaftung, indem du Klappbrücken nach deiner Überquerung schnell öffnest. Alles, was mit dem ctOS verbunden ist, kann zu deiner Waffe werden.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Raft">
                 <img src="bilder\Raft.png">
                 <div class="genre">
                     <p>Survival</p>
@@ -364,7 +367,7 @@
                 <h2>Raft</h2>
                 <p>Gefangen auf einem kleinen Floß mit nichts als einem Haken aus Plastik, erwachen Spieler auf einem großen, blauen Ozean ohne Land in Sicht! Mit trockener Kehle und leerem Magen wird das Überleben nicht einfach.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Visage">
                 <img src="bilder\Visage.png">
                 <div class="genre">
                     <p>Horror</p>
@@ -372,7 +375,7 @@
                 <h2>Visage</h2>
                 <p>Visage ist ein psychologisches Horrorspiel aus der Egoperspektive. Du erkundest ein mysteriöses Haus, das sich ständig ändert. Die Welt um dich herum ist eher ruhig und zeigt sowohl unerwartet beruhigende als auch extrem schreckliche Szenarien. Ein Erlebnis, das einem das Blut in den Adern gefrieren lässt.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Far">
                 <img src="bilder\FarCry.png">
                 <div class="genre">
                     <p>Action-Adventure</p>
@@ -381,7 +384,7 @@
                 <h2>Far Cry</h2>
                 <p>"Far Cry" ist eine beliebte Videospielreihe im Genre des Open-World-First-Person-Shooters, entwickelt von Ubisoft. Jedes Spiel der Serie präsentiert eine einzigartige, offene Spielwelt, in der der Spieler als Protagonist gegen verschiedene Feinde kämpft, Missionen abschließt und die Umgebung erkundet. Die Spielumgebungen reichen von tropischen Inseln über afrikanische Savannen bis hin zu Gebirgslandschaften und futuristischen Settings. Die Serie ist bekannt für ihre atemberaubende Grafik, vielseitige Spielmechanik und die Möglichkeit, den Spielverlauf durch Entscheidungen des Spielers zu beeinflussen.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Uncharted">
                 <img src="bilder\Uncharted.png">
                 <div class="genre">
                     <p>Action-Adventure</p>
@@ -389,7 +392,7 @@
                 <h2>Uncharted</h2>
                 <p>"Uncharted" ist eine beliebte Action-Adventure-Videospielreihe, die von Naughty Dog entwickelt und von Sony Interactive Entertainment veröffentlicht wurde. Die Serie folgt den Abenteuern des Schatzsuchers Nathan Drake, während er exotische Orte auf der ganzen Welt bereist, um antike Schätze zu finden und gefährliche Feinde zu besiegen. Die Spiele kombinieren packende Action, Klettereinlagen, Rätsel und eine filmische Handlung, die oft mit beeindruckender Grafik und Inszenierung präsentiert wird. "Uncharted" ist bekannt für seine charismatischen Charaktere, spannenden Geschichten und filmreife Präsentation.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Spiderman">
                 <img src="bilder\Spiderman.png">
                 <div class="genre">
                     <p>Action-Adventure</p>
@@ -397,7 +400,7 @@
                 <h2>Spiderman</h2>
                 <p>"Spider-Man" ist ein Action-Adventure-Videospiel, das von Insomniac Games entwickelt und von Sony Interactive Entertainment veröffentlicht wurde. Das Spiel basiert auf dem gleichnamigen Comic-Superhelden von Marvel und bietet eine offene Spielwelt, die die fiktive Version von New York City darstellt. Spieler übernehmen die Rolle von Peter Parker alias Spider-Man und schwingen sich durch die Stadt, um Verbrechen zu bekämpfen, Missionen abzuschließen und die Handlung voranzutreiben. Das Spiel zeichnet sich durch seine flüssige Bewegung und das Schwingen durch die Stadt, actionreiche Kämpfe und eine fesselnde Handlung aus, die verschiedene Aspekte des Spider-Man-Universums erkundet.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Witcher">
                 <img src="bilder\Witcher.png">
                 <div class="genre">
                     <p>Action-Adventure</p>
@@ -406,7 +409,7 @@
                 <h2>Witcher</h2>
                 <p>Du bist Geralt von Riva, Monsterschlächter und Söldner. Du erkundest einen vom Krieg zerrütteten und von Monstern befallenen Kontinent. Dein aktueller Auftrag? Finde Ciri, das Kind der Prophezeiung – eine lebende Waffe mit der Macht, die Welt zu verändern.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Star Wars">
                 <img src="bilder\StarWars.png">
                 <div class="genre">
                     <p>Action-Adventure</p>
@@ -414,7 +417,7 @@
                 <h2>Battlefront - Star Wars</h2>
                 <p>"Star Wars: Battlefront" ist eine Videospielreihe, die von DICE (Digital Illusions CE) entwickelt und von Electronic Arts veröffentlicht wurde. Das Spiel ist im Star-Wars-Universum angesiedelt und bietet eine Mischung aus Action, Shooter und Multiplayer-Schlachten. Spieler können in verschiedenen Modi wie Galactic Assault, Starfighter Assault und Heroes vs. Villains kämpfen. Das Spiel bietet die Möglichkeit, bekannte Charaktere aus der Star-Wars-Saga zu steuern, darunter Jedi, Sith, Soldaten und Raumschiffe. Es ist bekannt für seine beeindruckende Grafik, authentische Soundeffekte und das Eintauchen in das Star-Wars-Universum.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Mafia">
                 <img src="bilder\Mafia.png">
                 <div class="genre">
                     <p>Action-Adventure</p>
@@ -423,7 +426,7 @@
                 <h2>Mafia</h2>
                 <p>Nach einer Begegnung mit der Mafia findet sich der Taxifahrer Tommy Angelo widerwillig in der Welt des organisierten Verbrechens wieder. Doch schon bald sind die Verlockungen zu stark.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Red">
                 <img src="bilder\RedDeadRedemption.png">
                 <div class="genre">
                     <p>Action-Adventure</p>
@@ -432,7 +435,7 @@
                 <h2>Red Dead Redemption</h2>
                 <p>"Red Dead Redemption" ist ein Open-World-Action-Adventure-Spiel, das von Rockstar Games entwickelt und veröffentlicht wurde. Es spielt im Wilden Westen am Anfang des 20. Jahrhunderts und folgt dem ehemaligen Outlaw John Marston auf seiner Reise durch eine sich verändernde Welt. Das Spiel bietet eine offene Spielwelt, die von Prärien über Berge bis hin zu Städten reicht, die erkundet werden können. Spieler können eine Vielzahl von Aktivitäten ausführen, darunter Missionen, Schießereien, Viehtreiben, Glücksspiele und vieles mehr. Das Spiel ist bekannt für seine epische Handlung, realistische Darstellung des Wilden Westens und seinen detailreichen Charakteren.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Bioshock">
                 <img src="bilder\Bioshock.png">
                 <div class="genre">
                     <p>Action-Adventure</p>
@@ -441,7 +444,7 @@
                 <h2>Bioshock</h2>
                 <p>BioShock ist ein Shooter, anders als alles, was Sie je zuvor gespielt haben, reichhaltig an Waffen und Taktiken wie nie zuvor gesehen. Ein komplettes Arsenal steht Ihnen zur Verfügung, vom einfachen Revolver bis zum Granatwerfer und chemischen Schleudern, aber Sie sind auch dazu angehalten Ihre eigene DNA zu modifizieren, um eine noch tödlichere Waffe zu erstellen: Sie. Injizierbare Plasmen geben Ihnen übermenschliche Kräfte: schießen Sie Starkstromschläge ins Wasser, um mehrere Feinde auf einmal zu eliminieren oder frieren Sie sie ein, und zertrümmern Sie sie anschließend mit einem einfachen Schraubenschlüssel. Keine Feindesbegegnung gleicht der anderen und kein anderer Spieler wird dieses Spiel genau wie Sie spielen.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Crash, Bandicoot">
                 <img src="bilder\CrashBandicoot.png">
                 <div class="genre">
                     <p>Action-Adventure</p>
@@ -449,7 +452,7 @@
                 <h2>Crash Bandicoot</h2>
                 <p>"Crash Bandicoot" ist eine beliebte Videospielreihe, die von Naughty Dog entwickelt und von Sony Computer Entertainment veröffentlicht wurde. Das Spiel folgt dem Protagonisten Crash Bandicoot, einem anthropomorphen Beuteldachs, der gegen seinen Erzfeind, den bösen Wissenschaftler Dr. Neo Cortex, kämpft. Die Serie ist bekannt für ihre Plattformspielmechanik, bei der Spieler durch verschiedene Levels rennen, springen und kämpfen, während sie Hindernissen ausweichen und Gegner besiegen. "Crash Bandicoot" ist berühmt für seine farbenfrohe Grafik, humorvolle Charaktere und herausfordernden Level-Designs.</p>
             </div>
-            <div class="singleGame">
+            <div class="singleGame" data-name="Green">
                 <img src="bilder\GreenHell.png">
                 <div class="genre">
                     <p>Open World</p>
@@ -460,5 +463,55 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function generateAlphabet() {
+            var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            var alphabetFilter = document.getElementById('alphabetFilter');
+            
+            for (var i = 0; i < alphabet.length; i++) {
+              (function(buchstabe) {
+                var listItem = document.createElement('li');
+                var link = document.createElement('a');
+                link.href = '#';
+                link.textContent = buchstabe;
+                link.addEventListener('click', function() {
+                  filterSpiele(buchstabe);
+                });
+                listItem.appendChild(link);
+                alphabetFilter.appendChild(listItem);
+              })(alphabet[i]);
+            }
+          }
+
+          function filterSpiele(buchstabe) {
+            var spiele = document.querySelectorAll('.singleGame');
+            
+            spiele.forEach(function(spiel) {
+              var spielNamen = spiel.getAttribute('data-name').split(','); // Namen aufteilen
+              
+              // Überprüfen, ob einer der Namen den angeklickten Buchstaben als Anfangsbuchstaben hat
+              var matchFound = spielNamen.some(function(name) {
+                return name.trim().toUpperCase().charAt(0) === buchstabe;
+              });
+              
+              if (matchFound) {
+                spiel.style.display = 'block';
+              } else {
+                spiel.style.display = 'none';
+              }
+            });
+          }
+
+          function alleSpieleAnzeigen() {
+            var spiele = document.querySelectorAll('.singleGame');
+            
+            spiele.forEach(function(spiel) {
+              spiel.style.display = 'block';
+            });
+          }
+
+        document.addEventListener('DOMContentLoaded', generateAlphabet);
+    </script>
 </body>
 </html>

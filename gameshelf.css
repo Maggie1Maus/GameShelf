@@ -3,8 +3,44 @@ body {
     background: linear-gradient(184deg, rgba(32,47,60,1) 0%, rgba(39,65,98,1) 73%, rgba(110,61,86,1) 100%);
     color: white;
     font-family: "Comfortaa", sans-serif;
+}
+
+#alphabetFilter {
     display: flex;
-    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    margin-right: 40px;
+}
+
+button {
+    color: white;
+    margin-left: 40px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #6e3d56;
+    border: 1px solid #dc7aad;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: #4e2b3d;
+}
+
+button:active {
+    background-color: #3d1f2e;
+}
+
+li {
+    list-style-type: none;
+}
+
+li > a {
+    color: white;
+    text-decoration: none;
 }
 
 .wrapper {
@@ -74,6 +110,10 @@ h2 {
     .games {
         grid-template-columns: repeat(1, 1fr);
         margin: 50px 0;
+    }
+
+    #alphabetFilter {
+        justify-content: flex-start;
     }
 }
 
